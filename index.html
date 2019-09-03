@@ -1,0 +1,120 @@
+<!-- Señala que el tipo de documento es HTML5 -->
+<!DOCTYPE html>
+<!-- El documento es html y especifica el lenguaje-->
+<html lang="en">
+
+<!-- cabecera de la pagina, lleva el titulo y otras cosas-->
+
+<head>
+
+    <!-- Meta no cierra, porque solo lleva un argumento-->
+    <!-- Meta incliuye metadatos que no serán mostrados-->
+    <meta charset="UTF-8">
+    <meta name="Description" content="Esta es mi primero página web">
+    <meta name="author" content="Julio Denis">
+    <meta name="keyword" content="Mi primer título">
+    <title>Document</title>
+</head>
+
+<!-- Cuerpo del documento, lleva consigo los parrafos y demás -->
+
+<body>
+    <!-- Header no se muestra pero puede ser útil -->
+    <header>
+        <!-- h1 indica el título de la página, existen h del 1 al 6 -->
+        <h1>Mi Blog</h1>
+    </header>
+
+    <!-- nav indica una barra de navegación -->
+    <nav>
+        <!-- Unordered list, una lista desordenada -->
+        <ul>
+            <!-- List item, indica el item de una lista -->
+            <li>Principal</li>
+            <li>Ayuda</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+
+    <!-- Section indica una sección principal del documento -->
+    <section>
+
+        <!-- Artcile detalla contenido de adentro, que será repetitivo o muy común -->
+        <article>
+
+            <!-- hgroup agrupa encabezados para mantener la gerarquía de h's -->
+            <hgroup>
+                <h1>Título del primer artículo</h1>
+                <h2>Subtitulo del primer artículo</h2>
+            </hgroup>
+
+
+            <!-- la etiqueta time indica que se escribirá una fecha -->
+            <!-- datetime="" recibe una fecha y la formatea -->
+            <time datetime="03-09-2018">Publicado 03-09-2018</time>
+            <!-- p indica un párrafo -->
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsam quod quam illo commodi dignissimos
+                accusantium nulla consequuntur <small> voluptatum modi voluptates cupiditate beatae,</small> adipisci iste
+                dicta, alias consectetur! Sapiente saepe voluptates accusamus nam dolorum quisquam optio alias, fuga
+                doloremque delectus consequuntur eligendi. <cite> Id ratione perferendis, quo quam blanditiis ea.</cite></p>
+
+            <footer>
+                <p>Comentarios (0)</p>
+            </footer>
+
+            <!-- img no cierra porque sólo contiene un atributo, manda a pedir imagenes -->
+            <img src="img/atom.png" alt="">
+            <!-- con address indico que habrán hipervínculos  -->
+            <address>
+                <!-- a indica un hipervínculo, href indica la referencia -->
+                <a href="https://google.com">Buscar en Google</a>
+            </address>
+
+        </article>
+
+        <article>
+            <hgroup>
+                <h1>Título del segundo artículo</h1>
+                <h2>Subtitulo del segundo artículo</h2>
+            </hgroup>
+
+
+            <time datetime="03-09-2018">Publicado 03-09-2018</time>
+<!-- Span no hace nada, solamente sirve para poder modificarlo con CSS -->
+            <p> <span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, illo eos. Dicta deleniti odit quod quis</span>
+                modi ipsam iusto rem et, quidem alias illo aspernatur error ut natus odio. Impedit, inventore dolorem at
+                voluptatibus nulla quos possimus corporis harum non consequatur quam fugit quasi optio ipsam vitae quo
+                architecto quia!</p>
+
+            <footer>
+                <p>Comentarios (10)</p>
+            </footer>
+        </article>
+
+    </section>
+
+    <!-- contenido lateral relacionado a la sección principal -->
+    <aside>
+
+        <!-- Nos permite formatear con citas de libros y cosas así -->
+        <blockquote cite="http://lapaginaweb.com">
+            Mensaje 1
+        </blockquote>
+
+        <blockquote cite="https:facebook.com/Franciso_Denis">
+            Mensaje 2
+        </blockquote>
+
+    </aside>
+
+
+    <!-- Indica el pie de página del documento -->
+    <footer>
+        Derechos Reservadas 2010-2019
+    </footer>
+
+
+
+</body>
+
+</html>
